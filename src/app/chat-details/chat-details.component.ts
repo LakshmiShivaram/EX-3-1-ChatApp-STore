@@ -8,7 +8,8 @@ import { ChatService } from '../chat.service';
 import { Ichats } from '../ichats';
 import { MessageStorageService } from '../message-storage.service';
 import { addMessage } from '../message.action';
-import { selectMsg } from '../message.reducer';
+import { selectMsg } from '../message.selector';
+// import { selectMsg } from '../message.reducer';
 
 @Component({
   selector: 'app-chat-details',
