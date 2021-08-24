@@ -1,0 +1,25 @@
+.maincardlist {
+  margin: 1%;
+  width: 60%;
+}
+.cardhead {
+  margin: 9% 10% 10% 10%;
+  text-align: center;
+  box-shadow: 1px 1px 10px 2px;
+}
+.cardhead img {
+  border-radius: 50%;
+}
+.cardmsg {
+  margin: 5%;
+  padding: 4%;
+  box-shadow: 2px 3px 4px 2px;
+}
+.receivermsg {
+  text-align: left;
+  color: rgb(206, 75, 15);
+}
+.sendermsg {
+  text-align: right;
+  color: rgb(8, 11, 150);
+}
