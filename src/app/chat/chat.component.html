@@ -1,0 +1,35 @@
+<div class="card maincard">
+  <div class="col-sm-6">
+    <div class="panel">
+      <div class="panel-head">
+        <h5>Contacts List</h5>
+      </div>
+      <div class="panel-body" *ngFor="let items of chatData">
+        <div class="card chatcards" [routerLink]="['/chat-details',items.id]">
+          <div class="row">
+            <div class="col-sm-2 chatimg">
+              <img
+            [src]="items.sender.profileImage"
+            width="60"
+            height="60"
+          />
+            </div>
+            <div class="col-sm-10 chatdet">
+              <p id="chatname"><b>{{items.sender.name}}</b></p>
+              <div *ngIf="items.message">
+                <div *ngFor="let item of items.message; let last = last">
+                  <div *ngIf="last">
+                    <span class="text">{{item}}</span>
+                  </div>
+                </div>
+              </div>
+              <div *ngIf="items.content && !items.message">
+                <span class="text">{{items.content}}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
